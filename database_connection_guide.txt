@@ -1,0 +1,184 @@
+SMARTFINDER DATABASE CONNECTION GUIDE
+===================================
+
+1. DATABASE CONFIGURATION
+------------------------
+The database connection is configured in `config.php` with the following parameters:
+
+```php
+define('DB_HOST', 'localhost');     // Database host
+define('DB_NAME', 'smartfinder');   // Database name
+define('DB_USER', 'root');          // Database username
+define('DB_PASS', '');              // Database password
+define('SITE_URL', 'http://localhost/smartfinder'); // Site URL
+```
+
+2. DATABASE CONNECTION CLASS
+---------------------------
+The main database connection is handled in `Database.php`:
+
+```php
+class Database {
+    private $host = DB_HOST;
+    private $db_name = DB_NAME;
+    private $username = DB_USER;
+    private $password = DB_PASS;
+    public $conn;
+
+    public function getConnection() {
+        $this->conn = null;
+        try {
+            $this->conn = new PDO(
+                "mysql:host=" . $this->host . ";dbname=" . $this->db_name,
+                $this->username,
+                $this->password
+            );
+            $this->conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+        } catch(PDOException $e) {
+            echo "Connection Error: " . $e->getMessage();
+        }
+        return $this->conn;
+    }
+}
+```
+
+3. HOW TO USE THE DATABASE CONNECTION
+-----------------------------------
+To use the database connection in any PHP file:
+
+```php
+require_once 'config.php';
+require_once 'Database.php';
+
+$database = new Database();
+$db = $database->getConnection();
+
+// Example query
+$query = "SELECT * FROM users";
+$stmt = $db->prepare($query);
+$stmt->execute();
+```
+
+4. DATABASE SCHEMA
+-----------------
+The database schema is defined in `smartfinder_schema.sql` and includes tables for:
+- users
+- items
+- categories
+- locations
+- images
+- notifications
+
+5. SECURITY CONSIDERATIONS
+-------------------------
+1. Always use prepared statements to prevent SQL injection
+2. Never store plain text passwords
+3. Use proper error handling
+4. Implement connection pooling for better performance
+5. Regular backup of database
+
+6. COMMON DATABASE OPERATIONS
+---------------------------
+1. Insert Data:
+```php
+$query = "INSERT INTO users (username, email, password) VALUES (:username, :email, :password)";
+$stmt = $db->prepare($query);
+$stmt->bindParam(":username", $username);
+$stmt->bindParam(":email", $email);
+$stmt->bindParam(":password", $hashed_password);
+$stmt->execute();
+```
+
+2. Select Data:
+```php
+$query = "SELECT * FROM users WHERE id = :id";
+$stmt = $db->prepare($query);
+$stmt->bindParam(":id", $id);
+$stmt->execute();
+$result = $stmt->fetch(PDO::FETCH_ASSOC);
+```
+
+3. Update Data:
+```php
+$query = "UPDATE users SET username = :username WHERE id = :id";
+$stmt = $db->prepare($query);
+$stmt->bindParam(":username", $username);
+$stmt->bindParam(":id", $id);
+$stmt->execute();
+```
+
+4. Delete Data:
+```php
+$query = "DELETE FROM users WHERE id = :id";
+$stmt = $db->prepare($query);
+$stmt->bindParam(":id", $id);
+$stmt->execute();
+```
+
+7. ERROR HANDLING
+----------------
+Always implement proper error handling:
+
+```php
+try {
+    $database = new Database();
+    $db = $database->getConnection();
+    
+    // Your database operations here
+    
+} catch(PDOException $e) {
+    echo "Error: " . $e->getMessage();
+    // Log the error
+    error_log("Database Error: " . $e->getMessage());
+}
+```
+
+8. BEST PRACTICES
+----------------
+1. Always close database connections when done
+2. Use transactions for multiple operations
+3. Implement proper indexing
+4. Regular database maintenance
+5. Monitor database performance
+6. Implement connection pooling
+7. Use proper data types
+8. Regular backups
+
+9. TROUBLESHOOTING
+-----------------
+Common issues and solutions:
+
+1. Connection Refused:
+   - Check if MySQL server is running
+   - Verify host, username, and password
+   - Check firewall settings
+
+2. Access Denied:
+   - Verify user permissions
+   - Check database name
+   - Verify user privileges
+
+3. Slow Queries:
+   - Check indexes
+   - Optimize queries
+   - Monitor server resources
+
+4. Connection Timeout:
+   - Check server load
+   - Verify network connection
+   - Adjust timeout settings
+
+10. MAINTENANCE
+--------------
+Regular maintenance tasks:
+
+1. Backup database
+2. Check for errors
+3. Optimize tables
+4. Update indexes
+5. Monitor performance
+6. Check disk space
+7. Review user permissions
+8. Update MySQL version
+
+Remember to always follow security best practices and regularly update your database configuration and credentials. 

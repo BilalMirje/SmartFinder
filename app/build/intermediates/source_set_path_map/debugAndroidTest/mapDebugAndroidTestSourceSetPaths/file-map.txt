@@ -1,0 +1,6 @@
+com.example.aipoweredsmartfinder.test.app-jetified-annotation-experimental-1.3.0-0 C:\Users\mirje\.gradle\caches\8.10.2\transforms\796eca3e6d486c341485e09baa19e842\transformed\jetified-annotation-experimental-1.3.0\res
+com.example.aipoweredsmartfinder.test.app-jetified-core-1.5.0-1 C:\Users\mirje\.gradle\caches\8.10.2\transforms\a869e11c6cf5fb5af87fd098d72d4b00\transformed\jetified-core-1.5.0\res
+com.example.aipoweredsmartfinder.test.app-androidTest-2 C:\Users\mirje\Desktop\SmartFinder\app\build\generated\res\resValues\androidTest\debug
+com.example.aipoweredsmartfinder.test.app-mergeDebugAndroidTestResources-3 C:\Users\mirje\Desktop\SmartFinder\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\merged.dir
+com.example.aipoweredsmartfinder.test.app-mergeDebugAndroidTestResources-4 C:\Users\mirje\Desktop\SmartFinder\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\stripped.dir
+com.example.aipoweredsmartfinder.test.app-debugAndroidTest-5 C:\Users\mirje\Desktop\SmartFinder\app\build\intermediates\merged_res\debugAndroidTest\mergeDebugAndroidTestResources

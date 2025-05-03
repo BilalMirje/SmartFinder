@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="item_categories">
+        <item>Electronics</item>
+        <item>Clothing</item>
+        <item>Accessories</item>
+        <item>Documents</item>
+        <item>Keys</item>
+        <item>Bags</item>
+        <item>Other</item>
+    </string-array>
+    <color name="accent">#FF4081</color>
+    <color name="black">#000000</color>
+    <color name="colorAccent">#FFC107</color>
+    <color name="colorPrimary">#03A9F4</color>
+    <color name="colorPrimaryDark">#0288D1</color>
+    <color name="divider">#BDBDBD</color>
+    <color name="ic_launcher_background">#03A9F4</color>
+    <color name="icons">#FFFFFF</color>
+    <color name="light_gray">#F5F5F5</color>
+    <color name="primary">#2196F3</color>
+    <color name="primary_dark">#1976D2</color>
+    <color name="primary_light">#BBDEFB</color>
+    <color name="primary_text">#212121</color>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="secondary_text">#757575</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="white">#FFFFFF</color>
+    <string name="all_items">All Items</string>
+    <string name="app_name">SmartFinder</string>
+    <string name="btn_login">Login</string>
+    <string name="btn_register">Register</string>
+    <string name="btn_report_found">Report Found Item</string>
+    <string name="btn_report_lost">Report Lost Item</string>
+    <string name="btn_submit">Submit</string>
+    <string name="btn_view_items">View Items</string>
+    <string name="error_network">Network error. Please try again.</string>
+    <string name="error_required_field">This field is required</string>
+    <string name="found_items">Found Items</string>
+    <string name="hint_confirm_password">Confirm Password</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_password">Password</string>
+    <string name="hint_username">Username</string>
+    <string name="lost_items">Lost Items</string>
+    <string name="no_items_found">No items found</string>
+    <string name="search_hint">Search items…</string>
+    <string name="success_report">Item reported successfully!</string>
+    <string name="tab_found">Found Items</string>
+    <string name="tab_lost">Lost Items</string>
+    <string name="text_add_photo">Add Photo</string>
+    <string name="text_have_account">Already have an account? Login</string>
+    <string name="text_item_category">Category</string>
+    <string name="text_item_date">Date</string>
+    <string name="text_item_description">Description</string>
+    <string name="text_item_location">Location</string>
+    <string name="text_item_title">Item Title</string>
+    <string name="text_no_account">Don\'t have an account? Register</string>
+    <style name="AppButton" parent="Widget.MaterialComponents.Button">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:padding">12dp</item>
+        <item name="android:layout_marginTop">16dp</item>
+        <item name="android:layout_marginBottom">16dp</item>
+    </style>
+    <style name="AppTextField" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="boxStrokeColor">@color/primary</item>
+        <item name="boxStrokeWidth">1dp</item>
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:layout_marginBottom">8dp</item>
+    </style>
+    <style name="Theme.SmartFinder" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryVariant">@color/primary_dark</item>
+        <item name="colorOnPrimary">@color/white</item>
+        
+        <item name="colorSecondary">@color/accent</item>
+        <item name="colorSecondaryVariant">@color/accent</item>
+        <item name="colorOnSecondary">@color/white</item>
+        
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        
+    </style>
+    <style name="Theme.SmartFinder.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
+    <style name="Theme.SmartFinder.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="Theme.SmartFinder.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
+</resources>

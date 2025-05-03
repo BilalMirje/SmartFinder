@@ -1,0 +1,284 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.aipoweredsmartfinder"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="26"
+9        android:targetSdkVersion="34" />
+10
+11    <!-- Internet permission -->
+12    <uses-permission android:name="android.permission.INTERNET" />
+12-->C:\Users\mirje\Desktop\SmartFinder\app\src\main\AndroidManifest.xml:5:5-67
+12-->C:\Users\mirje\Desktop\SmartFinder\app\src\main\AndroidManifest.xml:5:22-64
+13    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+13-->C:\Users\mirje\Desktop\SmartFinder\app\src\main\AndroidManifest.xml:6:5-79
+13-->C:\Users\mirje\Desktop\SmartFinder\app\src\main\AndroidManifest.xml:6:22-76
+14
+15    <!-- Camera and Storage permissions -->
+16    <uses-permission android:name="android.permission.CAMERA" />
+16-->C:\Users\mirje\Desktop\SmartFinder\app\src\main\AndroidManifest.xml:9:5-65
+16-->C:\Users\mirje\Desktop\SmartFinder\app\src\main\AndroidManifest.xml:9:22-62
+17
+18    <uses-feature
+18-->C:\Users\mirje\Desktop\SmartFinder\app\src\main\AndroidManifest.xml:10:5-85
+19        android:name="android.hardware.camera"
+19-->C:\Users\mirje\Desktop\SmartFinder\app\src\main\AndroidManifest.xml:10:19-57
+20        android:required="false" />
+20-->C:\Users\mirje\Desktop\SmartFinder\app\src\main\AndroidManifest.xml:10:58-82
+21
+22    <!-- Storage permissions - updated for Android 13+ -->
+23    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+23-->C:\Users\mirje\Desktop\SmartFinder\app\src\main\AndroidManifest.xml:13:5-76
+23-->C:\Users\mirje\Desktop\SmartFinder\app\src\main\AndroidManifest.xml:13:22-73
+24    <uses-permission android:name="android.permission.READ_MEDIA_VIDEO" />
+24-->C:\Users\mirje\Desktop\SmartFinder\app\src\main\AndroidManifest.xml:14:5-75
+24-->C:\Users\mirje\Desktop\SmartFinder\app\src\main\AndroidManifest.xml:14:22-72
+25    <uses-permission android:name="android.permission.READ_MEDIA_AUDIO" />
+25-->C:\Users\mirje\Desktop\SmartFinder\app\src\main\AndroidManifest.xml:15:5-75
+25-->C:\Users\mirje\Desktop\SmartFinder\app\src\main\AndroidManifest.xml:15:22-72
+26    <!-- Fallback for Android 12 and lower -->
+27    <uses-permission
+27-->C:\Users\mirje\Desktop\SmartFinder\app\src\main\AndroidManifest.xml:17:5-107
+28        android:name="android.permission.READ_EXTERNAL_STORAGE"
+28-->C:\Users\mirje\Desktop\SmartFinder\app\src\main\AndroidManifest.xml:17:22-77
+29        android:maxSdkVersion="32" />
+29-->C:\Users\mirje\Desktop\SmartFinder\app\src\main\AndroidManifest.xml:17:78-104
+30    <uses-permission
+30-->C:\Users\mirje\Desktop\SmartFinder\app\src\main\AndroidManifest.xml:18:5-19:38
+31        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+31-->C:\Users\mirje\Desktop\SmartFinder\app\src\main\AndroidManifest.xml:18:22-78
+32        android:maxSdkVersion="28" />
+32-->C:\Users\mirje\Desktop\SmartFinder\app\src\main\AndroidManifest.xml:19:9-35
+33
+34    <permission
+34-->[androidx.core:core:1.9.0] C:\Users\mirje\.gradle\caches\8.10.2\transforms\adb0c0c8f407fa443cbac3480d6ddaf0\transformed\core-1.9.0\AndroidManifest.xml:22:5-24:47
+35        android:name="com.example.aipoweredsmartfinder.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+35-->[androidx.core:core:1.9.0] C:\Users\mirje\.gradle\caches\8.10.2\transforms\adb0c0c8f407fa443cbac3480d6ddaf0\transformed\core-1.9.0\AndroidManifest.xml:23:9-81
+36        android:protectionLevel="signature" />
+36-->[androidx.core:core:1.9.0] C:\Users\mirje\.gradle\caches\8.10.2\transforms\adb0c0c8f407fa443cbac3480d6ddaf0\transformed\core-1.9.0\AndroidManifest.xml:24:9-44
+37
+38    <uses-permission android:name="com.example.aipoweredsmartfinder.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+38-->[androidx.core:core:1.9.0] C:\Users\mirje\.gradle\caches\8.10.2\transforms\adb0c0c8f407fa443cbac3480d6ddaf0\transformed\core-1.9.0\AndroidManifest.xml:26:5-97
+38-->[androidx.core:core:1.9.0] C:\Users\mirje\.gradle\caches\8.10.2\transforms\adb0c0c8f407fa443cbac3480d6ddaf0\transformed\core-1.9.0\AndroidManifest.xml:26:22-94
+39
+40    <application
+40-->C:\Users\mirje\Desktop\SmartFinder\app\src\main\AndroidManifest.xml:21:5-94:19
+41        android:allowBackup="true"
+41-->C:\Users\mirje\Desktop\SmartFinder\app\src\main\AndroidManifest.xml:22:9-35
+42        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+42-->[androidx.core:core:1.9.0] C:\Users\mirje\.gradle\caches\8.10.2\transforms\adb0c0c8f407fa443cbac3480d6ddaf0\transformed\core-1.9.0\AndroidManifest.xml:28:18-86
+43        android:debuggable="true"
+44        android:extractNativeLibs="false"
+45        android:icon="@mipmap/ic_launcher"
+45-->C:\Users\mirje\Desktop\SmartFinder\app\src\main\AndroidManifest.xml:23:9-43
+46        android:label="@string/app_name"
+46-->C:\Users\mirje\Desktop\SmartFinder\app\src\main\AndroidManifest.xml:24:9-41
+47        android:roundIcon="@mipmap/ic_launcher_round"
+47-->C:\Users\mirje\Desktop\SmartFinder\app\src\main\AndroidManifest.xml:25:9-54
+48        android:supportsRtl="true"
+48-->C:\Users\mirje\Desktop\SmartFinder\app\src\main\AndroidManifest.xml:26:9-35
+49        android:testOnly="true"
+50        android:theme="@style/Theme.SmartFinder"
+50-->C:\Users\mirje\Desktop\SmartFinder\app\src\main\AndroidManifest.xml:27:9-49
+51        android:usesCleartextTraffic="true" >
+51-->C:\Users\mirje\Desktop\SmartFinder\app\src\main\AndroidManifest.xml:28:9-44
+52        <activity
+52-->C:\Users\mirje\Desktop\SmartFinder\app\src\main\AndroidManifest.xml:30:9-38:20
+53            android:name="com.example.aipoweredsmartfinder.activities.SplashActivity"
+53-->C:\Users\mirje\Desktop\SmartFinder\app\src\main\AndroidManifest.xml:31:13-54
+54            android:exported="true"
+54-->C:\Users\mirje\Desktop\SmartFinder\app\src\main\AndroidManifest.xml:32:13-36
+55            android:theme="@style/Theme.SmartFinder.NoActionBar" >
+55-->C:\Users\mirje\Desktop\SmartFinder\app\src\main\AndroidManifest.xml:33:13-65
+56            <intent-filter>
+56-->C:\Users\mirje\Desktop\SmartFinder\app\src\main\AndroidManifest.xml:34:13-37:29
+57                <action android:name="android.intent.action.MAIN" />
+57-->C:\Users\mirje\Desktop\SmartFinder\app\src\main\AndroidManifest.xml:35:17-69
+57-->C:\Users\mirje\Desktop\SmartFinder\app\src\main\AndroidManifest.xml:35:25-66
+58
+59                <category android:name="android.intent.category.LAUNCHER" />
+59-->C:\Users\mirje\Desktop\SmartFinder\app\src\main\AndroidManifest.xml:36:17-77
+59-->C:\Users\mirje\Desktop\SmartFinder\app\src\main\AndroidManifest.xml:36:27-74
+60            </intent-filter>
+61        </activity>
+62        <activity
+62-->C:\Users\mirje\Desktop\SmartFinder\app\src\main\AndroidManifest.xml:40:9-43:68
+63            android:name="com.example.aipoweredsmartfinder.activities.LoginActivity"
+63-->C:\Users\mirje\Desktop\SmartFinder\app\src\main\AndroidManifest.xml:41:13-53
+64            android:exported="false"
+64-->C:\Users\mirje\Desktop\SmartFinder\app\src\main\AndroidManifest.xml:42:13-37
+65            android:theme="@style/Theme.SmartFinder.NoActionBar" />
+65-->C:\Users\mirje\Desktop\SmartFinder\app\src\main\AndroidManifest.xml:43:13-65
+66        <activity
+66-->C:\Users\mirje\Desktop\SmartFinder\app\src\main\AndroidManifest.xml:45:9-48:68
+67            android:name="com.example.aipoweredsmartfinder.activities.RegisterActivity"
+67-->C:\Users\mirje\Desktop\SmartFinder\app\src\main\AndroidManifest.xml:46:13-56
+68            android:exported="false"
+68-->C:\Users\mirje\Desktop\SmartFinder\app\src\main\AndroidManifest.xml:47:13-37
+69            android:theme="@style/Theme.SmartFinder.NoActionBar" />
+69-->C:\Users\mirje\Desktop\SmartFinder\app\src\main\AndroidManifest.xml:48:13-65
+70        <activity
+70-->C:\Users\mirje\Desktop\SmartFinder\app\src\main\AndroidManifest.xml:50:9-53:68
+71            android:name="com.example.aipoweredsmartfinder.activities.MainActivity"
+71-->C:\Users\mirje\Desktop\SmartFinder\app\src\main\AndroidManifest.xml:51:13-52
+72            android:exported="false"
+72-->C:\Users\mirje\Desktop\SmartFinder\app\src\main\AndroidManifest.xml:52:13-37
+73            android:theme="@style/Theme.SmartFinder.NoActionBar" />
+73-->C:\Users\mirje\Desktop\SmartFinder\app\src\main\AndroidManifest.xml:53:13-65
+74        <activity
+74-->C:\Users\mirje\Desktop\SmartFinder\app\src\main\AndroidManifest.xml:55:9-58:68
+75            android:name="com.example.aipoweredsmartfinder.activities.ReportLostItemActivity"
+75-->C:\Users\mirje\Desktop\SmartFinder\app\src\main\AndroidManifest.xml:56:13-62
+76            android:exported="false"
+76-->C:\Users\mirje\Desktop\SmartFinder\app\src\main\AndroidManifest.xml:57:13-37
+77            android:theme="@style/Theme.SmartFinder.NoActionBar" />
+77-->C:\Users\mirje\Desktop\SmartFinder\app\src\main\AndroidManifest.xml:58:13-65
+78        <activity
+78-->C:\Users\mirje\Desktop\SmartFinder\app\src\main\AndroidManifest.xml:60:9-63:68
+79            android:name="com.example.aipoweredsmartfinder.activities.ReportFoundItemActivity"
+79-->C:\Users\mirje\Desktop\SmartFinder\app\src\main\AndroidManifest.xml:61:13-63
+80            android:exported="false"
+80-->C:\Users\mirje\Desktop\SmartFinder\app\src\main\AndroidManifest.xml:62:13-37
+81            android:theme="@style/Theme.SmartFinder.NoActionBar" />
+81-->C:\Users\mirje\Desktop\SmartFinder\app\src\main\AndroidManifest.xml:63:13-65
+82        <activity
+82-->C:\Users\mirje\Desktop\SmartFinder\app\src\main\AndroidManifest.xml:65:9-68:68
+83            android:name="com.example.aipoweredsmartfinder.activities.ViewItemsActivity"
+83-->C:\Users\mirje\Desktop\SmartFinder\app\src\main\AndroidManifest.xml:66:13-57
+84            android:exported="false"
+84-->C:\Users\mirje\Desktop\SmartFinder\app\src\main\AndroidManifest.xml:67:13-37
+85            android:theme="@style/Theme.SmartFinder.NoActionBar" />
+85-->C:\Users\mirje\Desktop\SmartFinder\app\src\main\AndroidManifest.xml:68:13-65
+86        <activity
+86-->C:\Users\mirje\Desktop\SmartFinder\app\src\main\AndroidManifest.xml:70:9-73:68
+87            android:name="com.example.aipoweredsmartfinder.activities.ItemDetailActivity"
+87-->C:\Users\mirje\Desktop\SmartFinder\app\src\main\AndroidManifest.xml:71:13-58
+88            android:exported="false"
+88-->C:\Users\mirje\Desktop\SmartFinder\app\src\main\AndroidManifest.xml:72:13-37
+89            android:theme="@style/Theme.SmartFinder.NoActionBar" />
+89-->C:\Users\mirje\Desktop\SmartFinder\app\src\main\AndroidManifest.xml:73:13-65
+90        <activity
+90-->C:\Users\mirje\Desktop\SmartFinder\app\src\main\AndroidManifest.xml:75:9-78:68
+91            android:name="com.example.aipoweredsmartfinder.activities.ChatActivity"
+91-->C:\Users\mirje\Desktop\SmartFinder\app\src\main\AndroidManifest.xml:76:13-52
+92            android:exported="false"
+92-->C:\Users\mirje\Desktop\SmartFinder\app\src\main\AndroidManifest.xml:77:13-37
+93            android:theme="@style/Theme.SmartFinder.NoActionBar" />
+93-->C:\Users\mirje\Desktop\SmartFinder\app\src\main\AndroidManifest.xml:78:13-65
+94        <activity
+94-->C:\Users\mirje\Desktop\SmartFinder\app\src\main\AndroidManifest.xml:80:9-83:68
+95            android:name="com.example.aipoweredsmartfinder.activities.ConversationsActivity"
+95-->C:\Users\mirje\Desktop\SmartFinder\app\src\main\AndroidManifest.xml:81:13-61
+96            android:exported="false"
+96-->C:\Users\mirje\Desktop\SmartFinder\app\src\main\AndroidManifest.xml:82:13-37
+97            android:theme="@style/Theme.SmartFinder.NoActionBar" />
+97-->C:\Users\mirje\Desktop\SmartFinder\app\src\main\AndroidManifest.xml:83:13-65
+98
+99        <provider
+99-->C:\Users\mirje\Desktop\SmartFinder\app\src\main\AndroidManifest.xml:85:9-93:20
+100            android:name="androidx.core.content.FileProvider"
+100-->C:\Users\mirje\Desktop\SmartFinder\app\src\main\AndroidManifest.xml:86:13-62
+101            android:authorities="com.example.aipoweredsmartfinder.fileprovider"
+101-->C:\Users\mirje\Desktop\SmartFinder\app\src\main\AndroidManifest.xml:87:13-80
+102            android:exported="false"
+102-->C:\Users\mirje\Desktop\SmartFinder\app\src\main\AndroidManifest.xml:88:13-37
+103            android:grantUriPermissions="true" >
+103-->C:\Users\mirje\Desktop\SmartFinder\app\src\main\AndroidManifest.xml:89:13-47
+104            <meta-data
+104-->C:\Users\mirje\Desktop\SmartFinder\app\src\main\AndroidManifest.xml:90:13-92:54
+105                android:name="android.support.FILE_PROVIDER_PATHS"
+105-->C:\Users\mirje\Desktop\SmartFinder\app\src\main\AndroidManifest.xml:91:17-67
+106                android:resource="@xml/file_paths" />
+106-->C:\Users\mirje\Desktop\SmartFinder\app\src\main\AndroidManifest.xml:92:17-51
+107        </provider>
+108        <provider
+108-->[com.squareup.picasso:picasso:2.8] C:\Users\mirje\.gradle\caches\8.10.2\transforms\64cd62b052e6c6a533dfdeb1b5a99df7\transformed\jetified-picasso-2.8\AndroidManifest.xml:8:9-11:40
+109            android:name="com.squareup.picasso.PicassoProvider"
+109-->[com.squareup.picasso:picasso:2.8] C:\Users\mirje\.gradle\caches\8.10.2\transforms\64cd62b052e6c6a533dfdeb1b5a99df7\transformed\jetified-picasso-2.8\AndroidManifest.xml:9:13-64
+110            android:authorities="com.example.aipoweredsmartfinder.com.squareup.picasso"
+110-->[com.squareup.picasso:picasso:2.8] C:\Users\mirje\.gradle\caches\8.10.2\transforms\64cd62b052e6c6a533dfdeb1b5a99df7\transformed\jetified-picasso-2.8\AndroidManifest.xml:10:13-72
+111            android:exported="false" />
+111-->[com.squareup.picasso:picasso:2.8] C:\Users\mirje\.gradle\caches\8.10.2\transforms\64cd62b052e6c6a533dfdeb1b5a99df7\transformed\jetified-picasso-2.8\AndroidManifest.xml:11:13-37
+112        <provider
+112-->[androidx.emoji2:emoji2:1.2.0] C:\Users\mirje\.gradle\caches\8.10.2\transforms\5f714343543c554a5443a7b4086c4ae6\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
+113            android:name="androidx.startup.InitializationProvider"
+113-->[androidx.emoji2:emoji2:1.2.0] C:\Users\mirje\.gradle\caches\8.10.2\transforms\5f714343543c554a5443a7b4086c4ae6\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:25:13-67
+114            android:authorities="com.example.aipoweredsmartfinder.androidx-startup"
+114-->[androidx.emoji2:emoji2:1.2.0] C:\Users\mirje\.gradle\caches\8.10.2\transforms\5f714343543c554a5443a7b4086c4ae6\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:26:13-68
+115            android:exported="false" >
+115-->[androidx.emoji2:emoji2:1.2.0] C:\Users\mirje\.gradle\caches\8.10.2\transforms\5f714343543c554a5443a7b4086c4ae6\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:27:13-37
+116            <meta-data
+116-->[androidx.emoji2:emoji2:1.2.0] C:\Users\mirje\.gradle\caches\8.10.2\transforms\5f714343543c554a5443a7b4086c4ae6\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
+117                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+117-->[androidx.emoji2:emoji2:1.2.0] C:\Users\mirje\.gradle\caches\8.10.2\transforms\5f714343543c554a5443a7b4086c4ae6\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:30:17-75
+118                android:value="androidx.startup" />
+118-->[androidx.emoji2:emoji2:1.2.0] C:\Users\mirje\.gradle\caches\8.10.2\transforms\5f714343543c554a5443a7b4086c4ae6\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:31:17-49
+119            <meta-data
+119-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\mirje\.gradle\caches\8.10.2\transforms\516f394186dd564884c168047ab6fe00\transformed\jetified-lifecycle-process-2.6.2\AndroidManifest.xml:29:13-31:52
+120                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+120-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\mirje\.gradle\caches\8.10.2\transforms\516f394186dd564884c168047ab6fe00\transformed\jetified-lifecycle-process-2.6.2\AndroidManifest.xml:30:17-78
+121                android:value="androidx.startup" />
+121-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\mirje\.gradle\caches\8.10.2\transforms\516f394186dd564884c168047ab6fe00\transformed\jetified-lifecycle-process-2.6.2\AndroidManifest.xml:31:17-49
+122            <meta-data
+122-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\mirje\.gradle\caches\8.10.2\transforms\57aa010729a9414ab9a03ccf9de304f5\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:29:13-31:52
+123                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+123-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\mirje\.gradle\caches\8.10.2\transforms\57aa010729a9414ab9a03ccf9de304f5\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:30:17-85
+124                android:value="androidx.startup" />
+124-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\mirje\.gradle\caches\8.10.2\transforms\57aa010729a9414ab9a03ccf9de304f5\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:31:17-49
+125        </provider>
+126
+127        <uses-library
+127-->[androidx.window:window:1.0.0] C:\Users\mirje\.gradle\caches\8.10.2\transforms\6148a9fec80592563b8350c9c9d7f1f7\transformed\jetified-window-1.0.0\AndroidManifest.xml:25:9-27:40
+128            android:name="androidx.window.extensions"
+128-->[androidx.window:window:1.0.0] C:\Users\mirje\.gradle\caches\8.10.2\transforms\6148a9fec80592563b8350c9c9d7f1f7\transformed\jetified-window-1.0.0\AndroidManifest.xml:26:13-54
+129            android:required="false" />
+129-->[androidx.window:window:1.0.0] C:\Users\mirje\.gradle\caches\8.10.2\transforms\6148a9fec80592563b8350c9c9d7f1f7\transformed\jetified-window-1.0.0\AndroidManifest.xml:27:13-37
+130        <uses-library
+130-->[androidx.window:window:1.0.0] C:\Users\mirje\.gradle\caches\8.10.2\transforms\6148a9fec80592563b8350c9c9d7f1f7\transformed\jetified-window-1.0.0\AndroidManifest.xml:28:9-30:40
+131            android:name="androidx.window.sidecar"
+131-->[androidx.window:window:1.0.0] C:\Users\mirje\.gradle\caches\8.10.2\transforms\6148a9fec80592563b8350c9c9d7f1f7\transformed\jetified-window-1.0.0\AndroidManifest.xml:29:13-51
+132            android:required="false" />
+132-->[androidx.window:window:1.0.0] C:\Users\mirje\.gradle\caches\8.10.2\transforms\6148a9fec80592563b8350c9c9d7f1f7\transformed\jetified-window-1.0.0\AndroidManifest.xml:30:13-37
+133
+134        <receiver
+134-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\mirje\.gradle\caches\8.10.2\transforms\57aa010729a9414ab9a03ccf9de304f5\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:34:9-52:20
+135            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+135-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\mirje\.gradle\caches\8.10.2\transforms\57aa010729a9414ab9a03ccf9de304f5\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:35:13-76
+136            android:directBootAware="false"
+136-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\mirje\.gradle\caches\8.10.2\transforms\57aa010729a9414ab9a03ccf9de304f5\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:36:13-44
+137            android:enabled="true"
+137-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\mirje\.gradle\caches\8.10.2\transforms\57aa010729a9414ab9a03ccf9de304f5\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:37:13-35
+138            android:exported="true"
+138-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\mirje\.gradle\caches\8.10.2\transforms\57aa010729a9414ab9a03ccf9de304f5\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:38:13-36
+139            android:permission="android.permission.DUMP" >
+139-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\mirje\.gradle\caches\8.10.2\transforms\57aa010729a9414ab9a03ccf9de304f5\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:39:13-57
+140            <intent-filter>
+140-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\mirje\.gradle\caches\8.10.2\transforms\57aa010729a9414ab9a03ccf9de304f5\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:40:13-42:29
+141                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+141-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\mirje\.gradle\caches\8.10.2\transforms\57aa010729a9414ab9a03ccf9de304f5\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:41:17-91
+141-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\mirje\.gradle\caches\8.10.2\transforms\57aa010729a9414ab9a03ccf9de304f5\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:41:25-88
+142            </intent-filter>
+143            <intent-filter>
+143-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\mirje\.gradle\caches\8.10.2\transforms\57aa010729a9414ab9a03ccf9de304f5\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:43:13-45:29
+144                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+144-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\mirje\.gradle\caches\8.10.2\transforms\57aa010729a9414ab9a03ccf9de304f5\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:44:17-85
+144-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\mirje\.gradle\caches\8.10.2\transforms\57aa010729a9414ab9a03ccf9de304f5\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:44:25-82
+145            </intent-filter>
+146            <intent-filter>
+146-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\mirje\.gradle\caches\8.10.2\transforms\57aa010729a9414ab9a03ccf9de304f5\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:46:13-48:29
+147                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+147-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\mirje\.gradle\caches\8.10.2\transforms\57aa010729a9414ab9a03ccf9de304f5\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:47:17-88
+147-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\mirje\.gradle\caches\8.10.2\transforms\57aa010729a9414ab9a03ccf9de304f5\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:47:25-85
+148            </intent-filter>
+149            <intent-filter>
+149-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\mirje\.gradle\caches\8.10.2\transforms\57aa010729a9414ab9a03ccf9de304f5\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:49:13-51:29
+150                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+150-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\mirje\.gradle\caches\8.10.2\transforms\57aa010729a9414ab9a03ccf9de304f5\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:50:17-95
+150-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\mirje\.gradle\caches\8.10.2\transforms\57aa010729a9414ab9a03ccf9de304f5\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:50:25-92
+151            </intent-filter>
+152        </receiver>
+153    </application>
+154
+155</manifest>
